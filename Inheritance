@@ -1,0 +1,57 @@
+
+package inheritance;
+
+
+
+
+public class Mahasiswa {
+   protected String nim,nama,grade;
+   protected int nilai;
+
+
+   Mahasiswa(){
+       
+   }
+
+    public void setNim(String nim) {
+        this.nim = nim;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setNilai(int nilai) {
+        this.nilai = nilai;
+    }
+
+    public String getNim() {
+        return nim;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public String getGrade() {
+     return grade;
+     if(getNilai()>=80 && getNilai()<=100){
+         grade="A";
+     }
+     else if (getNilai( >=70 && getNilai()<=79){
+         
+     }
+     return grade;
+    }
+   
+    public int getNIlai(){
+        return Nilai;
+    }
+
+   
+    }
+   
+    
+   
+   
+
