@@ -1,0 +1,107 @@
+
+overloading
+
+
+package inheritance;
+
+
+public class RerataNilai {
+    
+   int x1, x2, x3;
+   double y1, y2;
+
+   public int average(int x1, int x2) {
+      return (x1+x2)/2;
+   }
+   public double average(double y1, double y2) {
+      return (y1+y2)/2;
+   }
+   public int average(int x1, int x2, int x3) {
+      return (x1+x2+x3)/3;
+   }
+
+}
+
+
+
+package inheritance;
+
+
+public class TestTugas1 {
+    
+   public static void main(String args[]){
+      RerataNilai rn = new RerataNilai();
+      System.out.println("Reratai 21 dan 13 adalah : " + rn.average(21, 13));
+      System.out.println("Reratai 19.3 dan 39.5 adalah : " + rn.average(19.3, 39.5));
+      System.out.println("Reratai 123, 567 dan 744 adalah : " + rn.average(123, 567, 744));
+   }
+
+}
+
+
+*OVERRIDING*
+
+package inheritance;
+
+
+
+    public class TesTugas2 {
+   public static void main(String[] args) {
+      Katak O1 = new Katak(5, "Froggy");
+      Kecebong O2 = new Kecebong(2, "Junior Frog", 10);
+
+      System.out.println("Obyekr  nama        panjangEkor caraBergerak");
+      System.out.println("O1"+ O1.getUmur()+"     "+ O1.getNama()+ " " + "                  " + O1.caraBegerak());
+      System.out.println("O2"+ O2.getUmur()+"     "+ O2.getNama()+ " " + O2.getPanjangEkor()+ "         "+ O2.caraBegerak());
+   }
+}
+
+
+package inheritance;
+
+
+
+    public class Kecebong extends Katak {
+   double panjangEkor;
+
+   public Kecebong(int umur, String nama, double panjangEkor) {
+      super(umur, nama);
+      this.panjangEkor = panjangEkor;
+   }
+   public double getPanjangEkor() {
+      return panjangEkor;
+   }
+   @Override
+   public int getUmur() {
+      return super.getUmur();
+   }
+   @Override
+   public String getNama() {
+      return super.getNama();
+   }
+   @Override
+   public String caraBegerak() {
+      return "Berenang";
+   }
+
+}
+
+
+
+
+
+package inheritance;
+
+
+
+    public class TesTugas2 {
+   public static void main(String[] args) {
+      Katak O1 = new Katak(5, "Froggy");
+      Kecebong O2 = new Kecebong(2, "Junior Frog", 10);
+
+      System.out.println("Obyekr  nama        panjangEkor caraBergerak");
+      System.out.println("O1"+ O1.getUmur()+"     "+ O1.getNama()+ " " + "                  " + O1.caraBegerak());
+      System.out.println("O2"+ O2.getUmur()+"     "+ O2.getNama()+ " " + O2.getPanjangEkor()+ "         "+ O2.caraBegerak());
+   }
+}
+
