@@ -1,0 +1,103 @@
+BYE : MFTAHUL ULUM
+
+
+
+STEP 1
+
+package inheritance;
+public class Mahasiswa {
+ int nim;
+ String nama;
+ String nilai;
+ String grade;
+ public void menampilkan(){
+ System.out.println("Menampilkan nim,nama,nilai,grade dan Keterangan");
+ System.out.println("==================");
+ }
+}
+
+
+STEP 2
+
+
+ 
+package inheritance;
+    public class Mahasiswa21G extends Mahasiswa{
+ @Override
+ public void menampilkan()
+ {
+ System.out.println("Nim:"+nim);
+ System.out.println("Nama:"+nama);
+ System.out.println("Nilai:"+nilai);
+ System.out.println("Grade:"+grade);
+ System.out.println("=====================");
+ }
+ public void Keterangan(){
+ System.out.println("Budi LULUS");
+ System.out.println("====================");
+ }
+ }
+
+
+STEP 3
+
+package inheritance;
+public class Mahasiswa3 extends Mahasiswa{
+ @Override
+ public void menampilkan()
+ {
+ System.out.println("Nim:"+nim);
+ System.out.println("Nama:"+nama);
+ System.out.println("Nilai:"+nilai);
+ System.out.println("Grade:"+grade);
+ System.out.println("=====================");
+}
+ public void Keterangan(){
+ System.out.println("Fahmi LULUS");
+ System.out.println("====================");
+ }
+}
+
+STEP 4
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package inheritance;
+public class Mahasiswa3 extends Mahasiswa{
+ @Override
+ public void menampilkan()
+ {
+ System.out.println("Nim:"+nim);
+ System.out.println("Nama:"+nama);
+ System.out.println("Nilai:"+nilai);
+ System.out.println("Grade:"+grade);
+ System.out.println("=====================");
+}
+ public void Keterangan(){
+ System.out.println("Fahmi LULUS");
+ System.out.println("====================");
+ }
+}
+
+STEP 5
+
+
+package inheritance;
+public class Mahasiswa3 extends Mahasiswa{
+ @Override
+ public void menampilkan()
+ {
+ System.out.println("Nim:"+nim);
+ System.out.println("Nama:"+nama);
+ System.out.println("Nilai:"+nilai);
+ System.out.println("Grade:"+grade);
+ System.out.println("=====================");
+}
+ public void Keterangan(){
+ System.out.println("Fahmi LULUS");
+ System.out.println("====================");
+ }
+}
+
